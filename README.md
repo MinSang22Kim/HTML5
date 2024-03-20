@@ -1,3 +1,3 @@
 ## WEB_Programming
 
-🏫 Studying WEB Programming
+🏫 About studying WEB Programming
