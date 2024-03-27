@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz11</title>
+</head>
+<style>
+    td {
+        font-weight: bold;
+    }
+</style>
+<body>
+    <h1>글 작성하기</h1>
+    <table>
+        <tr>
+            <td>작성자</td>
+            <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+            <td>아이디</td>
+            <td><input type="text" name="id" /></td>
+        </tr>
+        <tr>
+            <td>이메일</td>
+            <td><input type="text" name="mail" />@<input type="text" name="mailaddress" /></td>
+        </tr>
+        <tr>
+            <td>휴대폰</td>
+            <td>
+                <select name="phone1">
+                    <option>010</option>
+                </select>
+                - <input type="text" name="phone2" /> - <input type="text" name="phone3" />
+            </td>
+        </tr>
+        <tr>
+            <td>글제목</td>
+            <td><input type="text" name="title" /></td>
+        </tr>
+        <tr>
+            <td>내용</td>
+            <td><textarea cols=23 rows=8></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="제출" /></td>
+    </table>
+</body>
+
+</html>
