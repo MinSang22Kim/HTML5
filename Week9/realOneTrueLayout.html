@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 500px;
+        }
+
+        #middle {
+            overflow: hidden;
+        }
+
+        #left {
+            float: left;
+            width: 150px;
+            height: 460px;
+            background: red;
+        }
+
+        #right {
+            float: left;
+            width: 350px;
+            height: 460px;
+            background: blue;
+        }
+
+        #top {
+            background: green;
+            position: relative;
+        }
+
+        #bottom {
+            background: purple;
+        }
+
+        #container {
+            width: 344px;
+            height: 300px;
+            border: 3px solid black;
+            overflow: hidden;
+            position: relative;
+            background: white;
+        }
+
+        .circle {
+            position: absolute;
+            border: 3px solid black;
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 50%;
+        }
+
+        #red {
+            background: red;
+            left: 20px;
+            top: 20px;
+        }
+
+        #green {
+            background: green;
+            right: 20px;
+            top: 20px;
+        }
+
+        #blue {
+            background: blue;
+            left: 20px;
+            bottom: 20px;
+        }
+
+        #yellow {
+            background: yellow;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        #container2 {
+            background: orange;
+            width: 150px; height: 100px;
+            position: absolute;
+            left: 50%; top: 50%;
+            margin-left: -75px;
+            margin-top: -50px;
+            z-index: 10;
+        }
+
+        .ellipsis {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        <div id="container2">
+            <h3 class="ellipsis">요소의 중앙 배치 글자 생략...</h3>
+        </div>
+    </div>
+
+    <div id="middle">
+        <div id="left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </div>
+        <div id="right">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            <div id="container">
+                <div id="red" class="circle"></div>
+                <div id="green" class="circle"></div>
+                <div id="blue" class="circle"></div>
+                <div id="yellow" class="circle"></div>
+            </div>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+        </div>
+    </div>
+
+    <div id="bottom">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+    </div>
+</body>
+
+</html>
