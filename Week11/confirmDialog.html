@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Dialog Example</title>
+    <script>
+        function showConfirm() {
+            var ret = confirm("전송할까요?");
+            if (ret == true) {
+                alert("전송을 시작합니다.");
+            } else {
+                alert("전송을 취소했습니다.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Confirm Dialog Example</h1>
+    <button onclick="showConfirmDialog()">전송하기</button>
+</body>
+
+</html>

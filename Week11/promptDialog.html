@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Dialog Example</title>
+    <script>
+        function getName() {
+            var ret = prompt("이름을 입력하세요", "정경용");
+            if (ret === null) {
+                // 취소 버튼이나 다이얼로그를 닫은 경우
+                alert("입력을 취소했습니다.");
+            } else if (ret === "") {
+                // 문자열 입력 없이 확인 버튼 누른 경우
+                alert("이름을 입력하지 않았습니다.");
+            } else {
+                // ret에는 사용자가 입력한 문자열
+                alert("안녕하세요, " + ret + "님!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Prompt Dialog Example</h1>
+    <button onclick="getName()">이름 입력하기</button>
+</body>
+
+</html>

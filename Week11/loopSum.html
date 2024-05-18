@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let output = 0;
+        let outputa = 0;
+        let outputb = 0;
+
+        for (let i = 0; i <= 100; i++)
+            output += i; // 1부터 100까지의 합
+
+        for (let i = 0; i <= 100; i+=2)
+            outputa += i; // 100까지의 짝수 합
+
+        for (let i = 1; i <= 100; i+=2)
+            outputb += i; // 100까지의 홀수 합
+
+        alert(output);
+        alert(outputa);
+        alert(outputb);
+
+        documnet.write(output);
+        document.write("<br");
+        documnet.write(outputa);
+        document.write("<br");
+        documnet.write(outputb);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
