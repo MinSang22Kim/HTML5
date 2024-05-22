@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4자리 정수 분해</title>
+    <script>
+        function splitNumber() {
+            // 4자리 정수를 입력받음
+            var number = prompt("4자리 정수를 입력하세요:", "1234");
+
+            // 정수로 변환
+            number = parseInt(number);
+
+            // 각 자리의 값을 계산
+            var thousands = Math.floor(number / 1000);
+            var hundreds = Math.floor((number % 1000) / 100);
+            var tens = Math.floor((number % 100) / 10);
+            var ones = number % 10;
+
+            // 결과 출력
+            alert("천의 자리: " + thousands + "\n" +
+                  "백의 자리: " + hundreds + "\n" +
+                  "십의 자리: " + tens + "\n" +
+                  "일의 자리: " + ones);
+        }
+    </script>
+</head>
+<body onload="splitNumber()">
+</body>
+</html>
