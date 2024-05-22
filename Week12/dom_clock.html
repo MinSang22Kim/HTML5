@@ -9,7 +9,7 @@
             let clock = document.getElementById('clock');
 
             setInterval(function () {
-                let now = new Date();
+                let now = new Date(); // GMT라서 서버 시계랑은 다를 수 있음
                 clock.innerHTML = now.toString();
             }, 1000);
         };
