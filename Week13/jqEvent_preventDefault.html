@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a').click(function (event) {
+                alert('이벤트 제거해서 안가지지롱~');
+                event.preventDefault(); // 기본 이벤트 제거 코드
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <a href="https://lms.kyonggi.ac.kr">KGU LMS</a> <!-- 이벤트 제거 해서 안감 -->
+</body>
+
+</html>
